@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tictac.css">
+    
+    <title>Tic Tac Toe</title>
+    <link rel="icon" type="image/ico" href="favicon.ico"/> /* favicon not responsive*/
+</head>
+<body>
+    <div class="container">
+        <img src="./images/consoleImage.png" alt="Console Image" class="image"/>
+        <div class="overlay">
+            <div class="text">Welcome Players</div>
+        </div>
+    </div>
+
+    <h1>Tic Tac Toe</h1>
+    <div class="board" id="board">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+    </div>
+    <div class="players" id="players">
+        <span>
+            <p class="message" id="message">It's X's turn</p>
+            <p class="message" id="message">It's O's turn</p>
+        </span>
+    </div>
+    <button class="reset-button" id="reset-button">Start New Game</button>
+    <script src="./tictac.js"></script>
+    
+</body>
+</html>

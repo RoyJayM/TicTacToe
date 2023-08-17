@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(104, 138, 127);
+
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 4px;
+    margin: 25px auto;
+    align-self: center;
+}
+
+.cell {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 2em;
+    align-items: center;
+}
+
+h1 {
+    margin: 25 25;
+
+}
+
+img {
+    display:block;
+    margin-left: 90;
+    margin-right: auto;
+    border-radius: 45px; /* smoother corners, can also use % for a circular apeal*/
+    border: 1px solid #dddd;
+    width: 150px;
+
+}
+
+/*failing to get this to work*/
+.container{
+    position: relative;
+    width: 50%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    border-radius: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: beige;
+    overflow: hidden;
+    width: 150px;
+    height: 0;
+    transition: 1s ease;
+}
+
+/*w3 schools*/
+.container:hover .overlay{ 
+    bottom: 0;
+    height: 100%; 
+}
+
+.text {
+    font-size: 20px;
+    color: red;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.players{
+    background-color: gray;
+    
+}
